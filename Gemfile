@@ -67,3 +67,6 @@ gem 'net-smtp'
 
 ## add pry-rails for debug
 gem 'pry-rails'
+
+## add search gem ransack
+gem 'ransack'
