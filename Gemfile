@@ -59,3 +59,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # rakuten API
 gem 'rakuten_web_service'
 gem 'dotenv-rails'
+
+## add net-smtp for ruby 3.1.2
+gem 'net-smtp'
+
+## add pry-rails for debug
+gem 'pry-rails'
