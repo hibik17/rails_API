@@ -1,5 +1,7 @@
 <div class="flex justify-center">
-  <%= render 'template/search', url: users_index_path, q: @q %>
+  <div class="">
+    <%= render "template/search", url: users_index_path, q: @q %>
+  </div>
   <table class="table-auto">
     <tbody>
       <% @users.each do |user| %>
