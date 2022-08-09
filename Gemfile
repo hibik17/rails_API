@@ -70,3 +70,6 @@ gem "pry-rails"
 
 ## add search gem ransack
 gem "ransack"
+
+## add fake data generator gem faker
+gem "faker"
