@@ -6,3 +6,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+user_name_array = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n']
+
+user_name_array.each do |name|
+  User.create(name: name)
+end
