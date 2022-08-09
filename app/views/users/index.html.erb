@@ -1,0 +1,21 @@
+<div class="flex justify-center">
+  <div class="">
+    <%= render "template/search", url: users_index_path, q: @q %>
+  </div>
+  <table class="table-auto">
+    <thread>
+      <tr>
+        <th><%= sort_link(@q, :name, 'name', default_order: :desc) %></th>
+        <th><%= sort_link(@q, :introduction, hide_indicator: true) %></th>
+      </tr>
+    </thread>
+    <tbody>
+      <% @users.each do |user| %>
+        <tr>
+          <td>user name: <%= user.name %></td>
+          <td>user introduction: <%= user.introduction %><td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
