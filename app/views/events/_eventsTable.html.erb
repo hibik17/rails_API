@@ -1,0 +1,23 @@
+<div>
+  <div class="">
+    <p class='font-bold m-10'>イベント実施日予定</p>
+  </div>
+  <table class="table-auto">
+    <thead>
+      <tr>
+        <th class="border px-4 py-2">タイトル</th>
+        <th class="border px-4 py-2">内容</th>
+        <th class="border px-4 py-2">日付</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% events.each do |event| %>
+        <tr>
+          <td class="border px-4 py-2"><%= event.title %></td>
+          <td class="border px-4 py-2"><%= event.content %></td>
+          <td class="border px-4 py-2"><%= event.start_time %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,20 @@
+<div>
+  <p class="font-bold mb-10">新規イベントの追加</p>
+  <%= form_with model: obj, url: events_path, local: true do |f| %>
+    <div class='mb-4'>
+      <%= f.label :'Event title', class: 'block text-gray-700 text-sm font-bold mb-2' %>
+      <%= f.text_field :title, placeholder: 'event title', class: 'shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight' %>
+    </div>
+    <div class="mb-4">
+      <%= f.label :'Event content', class: 'block text-gray-700 text-sm font-bold mb-2' %>
+      <%= f.text_field :content, placeholder: 'event content', class: 'shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight' %>
+    </div>
+    <div>
+      <%= f.label :'Event Schedule', class: 'block text-gray-700 text-sm font-bold mb-2' %>
+      <%= f.date_field :start_time, class: 'form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none'%>
+    </div>
+    <div class='flex justify-center mt-3'>
+      <%= f.submit 'イベントを作成', class: 'btn bg-green-400 hover:bg-green-700 text-white px-4 py-3 rounded-lg' %>
+    </div>
+  <% end %>
+</div>

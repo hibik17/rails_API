@@ -1,0 +1,24 @@
+<div class='container mx-auto'>
+
+  <p class="text-3xl text-center mt-3 text-green-300">simple calender実装ページ</p>
+  <hr class="m-10">
+
+  <%# create event lists table  %>
+  <div class="flex justify-center">
+    <%= render 'events/eventsTable', events: @events %>
+  </div>
+
+  <hr class="m-10">
+
+  <%# create new calender %>
+  <div class="flex justify-center">
+    <%= render 'events/form', obj: Event.new %>
+  </div>
+
+  <hr class="m-10">
+
+  <%# display simple calender %>
+  <div class="m-10">
+    <%= render 'events/monthCalender', events: @events %>
+  </div>
+</div>
