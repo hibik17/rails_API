@@ -2,9 +2,9 @@
 
 require 'test_helper'
 
-class BooksControllerTest < ActionDispatch::IntegrationTest
+class EventsControllerTest < ActionDispatch::IntegrationTest
   test 'should get index' do
-    get books_index_url
+    get events_index_url
     assert_response :success
   end
 end
