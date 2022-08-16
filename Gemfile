@@ -76,3 +76,6 @@ gem 'faker'
 
 ## add simple calender generater gem simpleCalender
 gem 'simple_calendar', '~> 2.0'
+
+## add cocoon to make multiple form
+gem 'cocoon'
